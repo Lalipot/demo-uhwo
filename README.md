@@ -1,2 +1,2 @@
 # demo-uhwo
-My demo site for UHWO 
+[view demo](https://github.com/Lalipot/demo-uhwo.git)
