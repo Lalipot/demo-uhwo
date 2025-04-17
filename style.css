@@ -130,3 +130,12 @@ body {
   font-weight: bold;
 }
 
+/* Author Image Styling */
+.author-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #198754;
+}
+
