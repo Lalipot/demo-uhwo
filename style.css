@@ -1,6 +1,6 @@
 /* style.css */
 
-/* Enable Smooth Scrolling */
+/* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
 }
@@ -8,7 +8,7 @@ html {
 /* Global Styles */
 body {
   font-family: 'Sora', sans-serif;
-  padding-top: 70px; /* offsets fixed navbar */
+  padding-top: 70px; /* to account for fixed navbar */
 }
 
 /* Navbar Styles */
@@ -76,7 +76,7 @@ body {
   border-radius: 8px;
 }
 
-/* Responsive tweaks */
+/* Responsive tweaks for About section */
 @media (max-width: 768px) {
   .artist-card {
     margin-bottom: 1.5rem;
@@ -90,4 +90,15 @@ body {
   .about-the-artist .col-md-8 p {
     text-align: center;
   }
+}
+
+/* === TESTIMONIALS SECTION === */
+.testimonial-title {
+  color: #198754;
+  font-weight: 700;
+}
+
+.testimonial-text {
+  color: #198754;
+  line-height: 1.6;
 }
