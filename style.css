@@ -58,39 +58,41 @@ body {
 }
 
 /* === ABOUT THE ARTIST SECTION === */
-
-/* Padding between sections */
-.pt-custom-82 {
-  padding-top: 82px;
+.about-the-artist-section {
+  background-color: #f4f7f3;
 }
 
-.pb-custom-182 {
-  padding-bottom: 182px;
-}
-
-/* Artist card/image block */
-.artist-card {
+.artist-img {
   width: 219px;
   height: 265px;
-  background-color: #ccc;
-  border-radius: 8px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 4px solid #198754;
 }
 
-/* Responsive tweaks for About section */
+.artist-description {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.last-updated {
+  color: #DDE3D1;
+  font-style: italic;
+}
+
 @media (max-width: 768px) {
-  .artist-card {
+  .artist-description,
+  .last-updated,
+  .about-the-artist-section h4 {
+    text-align: center;
+  }
+
+  .artist-img {
     margin-bottom: 1.5rem;
   }
-
-  .about-the-artist .col-md-8 {
-    text-align: center;
-  }
-
-  .about-the-artist .col-md-8 h4,
-  .about-the-artist .col-md-8 p {
-    text-align: center;
-  }
 }
+
 
 /* === TESTIMONIALS SECTION === */
 .testimonials-section {
