@@ -4,6 +4,7 @@ body {
   font-family: 'Sora', sans-serif;
 }
 
+/* Navbar Customizations */
 .navbar-custom {
   background-color: #198754;
 }
@@ -17,6 +18,7 @@ body {
   color: #dffbe4;
 }
 
+/* Button Styles */
 .btn-custom {
   background-color: #198754;
   color: white;
@@ -34,15 +36,17 @@ body {
   color: white;
 }
 
-/* 🔽 Custom Card Size */
+/* 🔽 Card Size Styling */
 .custom-card-size {
   width: 353px;
   height: 203px;
 }
 
+/* 🔁 Responsive Behavior for Small Screens */
 @media (max-width: 768px) {
   .custom-card-size {
     width: 100%;
+    max-width: 353px;
     height: auto;
   }
 }
