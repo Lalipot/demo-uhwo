@@ -1,10 +1,11 @@
 /* style.css */
 
+/* Global font */
 body {
   font-family: 'Sora', sans-serif;
 }
 
-/* Navbar Customizations */
+/* Navbar styling */
 .navbar-custom {
   background-color: #198754;
 }
@@ -18,7 +19,7 @@ body {
   color: #dffbe4;
 }
 
-/* Button Styles */
+/* Button styling */
 .btn-custom {
   background-color: #198754;
   color: white;
@@ -36,17 +37,51 @@ body {
   color: white;
 }
 
-/* 🔽 Card Size Styling */
+/* Custom Card Size for Projects Section */
 .custom-card-size {
   width: 353px;
   height: 203px;
 }
 
-/* 🔁 Responsive Behavior for Small Screens */
 @media (max-width: 768px) {
   .custom-card-size {
     width: 100%;
-    max-width: 353px;
     height: auto;
+  }
+}
+
+/* === ABOUT THE ARTIST SECTION === */
+
+/* Padding between Projects and About Section */
+.pt-custom-82 {
+  padding-top: 82px;
+}
+
+.pb-custom-182 {
+  padding-bottom: 182px;
+}
+
+/* Artist Card/Image Placeholder */
+.artist-card {
+  width: 219px;
+  height: 265px;
+  background-color: #ccc;
+  /* placeholder color */
+  border-radius: 8px;
+}
+
+/* Mobile Responsive Tweaks */
+@media (max-width: 768px) {
+  .artist-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .about-the-artist .col-md-8 {
+    text-align: center;
+  }
+
+  .about-the-artist .col-md-8 h4,
+  .about-the-artist .col-md-8 p {
+    text-align: center;
   }
 }
