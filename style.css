@@ -1,36 +1,48 @@
 /* style.css */
 
 body {
-    font-family: 'Sora', sans-serif;
+  font-family: 'Sora', sans-serif;
+}
+
+.navbar-custom {
+  background-color: #198754;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+  color: white;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #dffbe4;
+}
+
+.btn-custom {
+  background-color: #198754;
+  color: white;
+  border: none;
+}
+
+.btn-custom-outline {
+  border: 2px solid #198754;
+  color: #198754;
+  background-color: transparent;
+}
+
+.btn-custom-outline:hover {
+  background-color: #198754;
+  color: white;
+}
+
+/* 🔽 Custom Card Size */
+.custom-card-size {
+  width: 353px;
+  height: 203px;
+}
+
+@media (max-width: 768px) {
+  .custom-card-size {
+    width: 100%;
+    height: auto;
   }
-  
-  .navbar-custom {
-    background-color: #198754;
-  }
-  
-  .navbar-custom .nav-link,
-  .navbar-custom .navbar-brand {
-    color: white;
-  }
-  
-  .navbar-custom .nav-link:hover {
-    color: #dffbe4;
-  }
-  
-  .btn-custom {
-    background-color: #198754;
-    color: white;
-    border: none;
-  }
-  
-  .btn-custom-outline {
-    border: 2px solid #198754;
-    color: #198754;
-    background-color: transparent;
-  }
-  
-  .btn-custom-outline:hover {
-    background-color: #198754;
-    color: white;
-  }
-  
+}
