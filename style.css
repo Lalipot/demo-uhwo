@@ -93,6 +93,21 @@ body {
 }
 
 /* === TESTIMONIALS SECTION === */
+.testimonials-section {
+  background-color: #f9f9f2; /* soft off-white / light beige */
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
 .testimonial-title {
   color: #198754;
   font-weight: 700;
@@ -102,3 +117,16 @@ body {
   color: #198754;
   line-height: 1.6;
 }
+
+.testimonial-author {
+  color: #333;
+  font-style: italic;
+}
+
+.quote-icon {
+  font-size: 3rem;
+  color: #198754;
+  line-height: 1;
+  font-weight: bold;
+}
+
