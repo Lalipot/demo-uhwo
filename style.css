@@ -26,7 +26,7 @@ body {
   color: #dffbe4;
 }
 
-/* Custom Buttons */
+/* Buttons */
 .btn-custom {
   background-color: #198754;
   color: white;
@@ -63,16 +63,62 @@ body {
   line-height: 1.6;
 }
 
-/* === PROJECT CARDS === */
-.custom-card-size {
+/* === PROJECT CARDS WITH OVERLAY & TAG === */
+
+.project-card {
   width: 353px;
-  height: 203px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Overlay on hover */
+.project-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 135, 84, 0.75);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  text-align: center;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+/* Category Tag */
+.project-tag {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background-color: white;
+  color: #198754;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 50px;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
-  .custom-card-size {
+  .project-card {
     width: 100%;
-    height: auto;
   }
 }
 
@@ -132,7 +178,6 @@ body {
   font-style: italic;
 }
 
-/* Clean Circle Author Image (No Border) */
 .author-img {
   width: 60px;
   height: 60px;
@@ -172,4 +217,25 @@ body {
 
 .footer-custom .icon-link:hover {
   color: #dffbe4;
+}
+
+
+/* Ensure all project card images are the same height */
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Stretch all project cards to equal height */
+.project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make overlay stretch too */
+.project-card .overlay {
+  height: 200px; /* match image height */
 }
