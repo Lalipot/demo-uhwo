@@ -1,0 +1,137 @@
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Sora', sans-serif;
+  padding-top: 70px;
+  background-color: #f9f9f2;
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar-custom {
+  background-color: #198754;
+  z-index: 1030;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+  color: white;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #dffbe4;
+}
+
+/* Buttons */
+.btn-custom {
+  background-color: #198754;
+  color: white;
+  border: none;
+}
+
+.btn-custom-outline {
+  border: 2px solid #198754;
+  color: #198754;
+  background-color: transparent;
+}
+
+.btn-custom-outline:hover {
+  background-color: #198754;
+  color: white;
+}
+
+/* === PROJECT DETAIL SECTION === */
+.project-detail-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail-title {
+  font-weight: 700;
+  color: #198754;
+  margin-bottom: 1rem;
+}
+
+.project-detail-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.project-category-badge {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  background-color: #198754;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  text-transform: capitalize;
+}
+
+/* === RELATED PROJECTS SECTION === */
+.related-project-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.related-project-card:hover {
+  transform: translateY(-5px);
+}
+
+.related-project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.related-project-card .card-body {
+  padding: 1rem;
+}
+
+.related-project-card h5 {
+  font-size: 1.2rem;
+  color: #198754;
+  margin-bottom: 0.8rem;
+}
+
+.related-project-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* === FOOTER === */
+.footer-custom {
+  background-color: #198754;
+  padding: 1.5rem 0;
+}
+
+.footer-custom .footer-icon-link {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer-custom .footer-icon-link:hover {
+  color: #dffbe4;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .project-detail-img {
+    max-width: 100%;
+  }
+
+  .related-project-card img {
+    height: auto;
+  }
+}
