@@ -226,6 +226,11 @@ body {
   color: #dffbe4;
 }
 
+.small-icon {
+  width: 24px;
+  height: 24px;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .project-card img,
